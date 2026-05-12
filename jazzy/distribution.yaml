@@ -1664,7 +1664,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/coal-release.git
-      version: 3.0.3-1
+      version: 3.0.3-2
     source:
       type: git
       url: https://github.com/coal-library/coal.git
@@ -4379,7 +4379,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/image_pipeline-release.git
-      version: 5.0.11-1
+      version: 5.0.12-1
     source:
       test_pull_requests: true
       type: git
@@ -5658,16 +5658,10 @@ repositories:
       version: develop
     release:
       packages:
-      - kitti_metrics_eval
       - mola
       - mola_bridge_ros2
       - mola_demos
-      - mola_input_euroc_dataset
-      - mola_input_kitti360_dataset
-      - mola_input_kitti_dataset
       - mola_input_lidar_bin_dataset
-      - mola_input_mulran_dataset
-      - mola_input_paris_luco_dataset
       - mola_input_rawlog
       - mola_input_rosbag2
       - mola_input_video
@@ -5679,14 +5673,38 @@ repositories:
       - mola_relocalization
       - mola_traj_tools
       - mola_viz
+      - mola_viz_imgui
       - mola_yaml
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola-release.git
-      version: 2.8.0-1
+      version: 2.9.0-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola.git
+      version: develop
+    status: developed
+  mola_academic_datasets:
+    doc:
+      type: git
+      url: https://github.com/MOLAorg/mola_academic_datasets.git
+      version: develop
+    release:
+      packages:
+      - kitti_metrics_eval
+      - mola_academic_datasets
+      - mola_input_euroc_dataset
+      - mola_input_kitti360_dataset
+      - mola_input_kitti_dataset
+      - mola_input_mulran_dataset
+      - mola_input_paris_luco_dataset
+      tags:
+        release: release/jazzy/{package}/{version}
+      url: https://github.com/ros2-gbp/mola_academic_datasets-release.git
+      version: 3.0.0-1
+    source:
+      type: git
+      url: https://github.com/MOLAorg/mola_academic_datasets.git
       version: develop
     status: developed
   mola_common:
@@ -5698,7 +5716,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola_common-release.git
-      version: 0.5.2-1
+      version: 0.6.0-2
     source:
       type: git
       url: https://github.com/MOLAorg/mola_common.git
@@ -5728,7 +5746,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola_imu_preintegration-release.git
-      version: 1.16.0-1
+      version: 1.16.1-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola_imu_preintegration.git
@@ -5743,7 +5761,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola_lidar_odometry-release.git
-      version: 2.1.0-1
+      version: 2.2.0-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola_lidar_odometry.git
@@ -5758,7 +5776,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola_sm_loop_closure-release.git
-      version: 1.1.0-1
+      version: 1.2.0-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola_sm_loop_closure.git
@@ -5779,7 +5797,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mola_state_estimation-release.git
-      version: 2.3.1-1
+      version: 2.4.0-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola_state_estimation.git
@@ -5986,7 +6004,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mp2p_icp-release.git
-      version: 2.10.1-1
+      version: 2.10.2-1
     source:
       type: git
       url: https://github.com/MOLAorg/mp2p_icp.git
@@ -6059,7 +6077,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt_navigation-release.git
-      version: 2.4.0-1
+      version: 2.5.0-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/mrpt_navigation.git
@@ -6103,7 +6121,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt_ros-release.git
-      version: 2.15.15-1
+      version: 2.15.17-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt_ros.git
@@ -6121,7 +6139,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt_ros_bridge-release.git
-      version: 3.5.3-1
+      version: 3.5.3-2
     source:
       type: git
       url: https://github.com/MRPT/mrpt_ros_bridge.git
@@ -7206,16 +7224,16 @@ repositories:
     doc:
       type: git
       url: https://github.com/fujitatomoya/ros2_persist_parameter_server.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/persist_parameter_server-release.git
-      version: 1.0.5-1
+      version: 2.0.0-1
     source:
       type: git
       url: https://github.com/fujitatomoya/ros2_persist_parameter_server.git
-      version: rolling
+      version: jazzy
     status: maintained
   pfs:
     doc:
@@ -7320,7 +7338,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/pinocchio-release.git
-      version: 3.9.0-1
+      version: 4.0.0-2
     source:
       type: git
       url: https://github.com/stack-of-tasks/pinocchio.git
@@ -9189,7 +9207,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/ros2_control-release.git
-      version: 4.45.1-1
+      version: 4.45.2-1
     source:
       type: git
       url: https://github.com/ros-controls/ros2_control.git
@@ -9250,7 +9268,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/ros2_controllers-release.git
-      version: 4.40.0-1
+      version: 4.40.1-1
     source:
       type: git
       url: https://github.com/ros-controls/ros2_controllers.git
